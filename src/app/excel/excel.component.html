@@ -1,0 +1,23 @@
+<table class="table table-bordered" id="excel-table">
+    <thead>
+      <tr >
+
+        <th *ngFor="let header of tableHeaders">{{header}}</th>
+      
+       
+       
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let details of detail">
+    
+        <td>{{details.ParticipantName}}</td>
+        <td>{{details.EmailId}}</td>
+        <td>{{details.Age}}</td>
+        <td>{{details.Gender}}</td>
+      </tr>
+    </tbody>
+</table>
+
+
+<button class="btn btn-primary" (click)="downloadfile()">Download File</button>
